@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAG Chat Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="chat-panel" aria-label="RAG chat assistant">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Grounded support assistant</p>
+            <h1>RAG Chat Assistant</h1>
+          </div>
+          <span class="status-dot" title="Session active"></span>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite">
+          <article class="message assistant">
+            <div class="bubble">
+              Ask about passwords, billing, refunds, subscriptions, support, privacy, or workspace roles.
+            </div>
+          </article>
+        </div>
+
+        <form id="chat-form" class="composer">
+          <input
+            id="message-input"
+            type="text"
+            autocomplete="off"
+            placeholder="Ask a question from the knowledge base..."
+            maxlength="2000"
+            required
+          />
+          <button id="send-button" type="submit" aria-label="Send message">
+            <span>Send</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

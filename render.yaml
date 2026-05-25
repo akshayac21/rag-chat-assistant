@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: rag-chatbot-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: google/gemini-2.0-flash-exp:free
+      - key: OPENROUTER_SITE_URL
+        value: https://your-render-service.onrender.com
+      - key: OPENROUTER_APP_NAME
+        value: RAG Chat Assistant
+      - key: EMBEDDING_MODEL
+        value: all-MiniLM-L6-v2
+      - key: SIMILARITY_THRESHOLD
+        value: "0.65"
+      - key: TOP_K
+        value: "3"
+      - key: REQUEST_TIMEOUT_SECONDS
+        value: "30"
+      - key: ALLOWED_ORIGINS
+        value: https://your-frontend-domain.vercel.app,http://localhost:3000

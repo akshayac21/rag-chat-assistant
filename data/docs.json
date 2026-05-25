@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Password Reset",
+    "source": "help-center/password-reset",
+    "questions": [
+      "How do I reset my password?",
+      "I forgot my password. What should I do?",
+      "Why did I not receive a password reset email?",
+      "How long does the password reset link last?"
+    ],
+    "content": "Users can reset their password from the sign in page by selecting Forgot password. They must enter the email address linked to their account. A secure reset link is sent by email and expires after 30 minutes. If the email does not arrive, users should check spam, verify the email address, and wait a few minutes before requesting another link. Support cannot view existing passwords but can trigger a new reset email after verifying account ownership."
+  },
+  {
+    "title": "Refund Policy",
+    "source": "help-center/refunds",
+    "questions": [
+      "How do I get a refund?",
+      "Am I eligible for a refund?",
+      "How long does a refund take?",
+      "Can I get a refund for my subscription?"
+    ],
+    "content": "Refund requests are eligible within 14 days of purchase when the account has not exceeded normal trial usage. Monthly subscriptions can be refunded for the most recent billing period only. Annual subscriptions may receive a prorated refund when requested within the first 30 days. Refunds are returned to the original payment method and typically take 5 to 10 business days to appear. Fees caused by banks, currency conversion, or third-party processors are not refundable."
+  },
+  {
+    "title": "Account Creation",
+    "source": "help-center/account-creation",
+    "questions": [
+      "How do I create an account?",
+      "How do I verify my email?",
+      "How long is a verification email valid?",
+      "Can I invite team members?"
+    ],
+    "content": "New users create an account with a name, email address, and password. The email address must be verified before all features are available. Verification emails are valid for 24 hours. Teams can invite members by email from the workspace settings page. Invited members join with the role selected by the administrator. Duplicate accounts using the same verified email address are not allowed."
+  },
+  {
+    "title": "Billing Management",
+    "source": "help-center/billing",
+    "questions": [
+      "How do I update my payment method?",
+      "Where can I download invoices?",
+      "What happens after a failed payment?",
+      "How do I change billing details?"
+    ],
+    "content": "Billing information is managed from Settings under Billing. Account owners can update payment methods, download invoices, change billing addresses, and review upcoming charges. Changes to payment methods apply to the next billing attempt. Failed payments are retried automatically for seven days. If payment is not completed after retries, premium access may be paused until the balance is paid."
+  },
+  {
+    "title": "Subscription Plans",
+    "source": "help-center/subscriptions",
+    "questions": [
+      "What subscription plans are available?",
+      "What is included in the Free plan?",
+      "What is included in the Pro plan?",
+      "What is included in the Team plan?",
+      "When does a downgrade take effect?"
+    ],
+    "content": "The Free plan includes basic access with limited monthly usage. The Pro plan includes higher usage limits, priority support, and advanced export features. The Team plan adds centralized billing, member management, shared workspaces, and administrator controls. Users can upgrade immediately. Downgrades take effect at the end of the current billing cycle so existing paid access is not interrupted."
+  },
+  {
+    "title": "Login Troubleshooting",
+    "source": "help-center/login",
+    "questions": [
+      "Why can I not log in?",
+      "Why is my account locked?",
+      "How do I fix login issues?",
+      "Do cookies affect login?"
+    ],
+    "content": "Login issues are usually caused by incorrect passwords, unverified email addresses, browser extensions, or blocked cookies. Users should confirm that cookies are enabled, clear browser cache, try a private browsing window, and reset the password if needed. Accounts may be temporarily locked after repeated failed login attempts. Temporary locks normally clear after 15 minutes."
+  },
+  {
+    "title": "Support Channels",
+    "source": "help-center/support",
+    "questions": [
+      "How do I contact support?",
+      "What support is available?",
+      "Who gets priority support?",
+      "What should I include in a support request?"
+    ],
+    "content": "Support is available through the in-app help widget and by email. Free plan users receive standard email support. Pro and Team users receive priority support with faster response targets. Urgent account access and billing problems should include the account email, workspace name, invoice number if available, and screenshots of any error messages. Support is available Monday through Friday excluding major holidays."
+  },
+  {
+    "title": "Data Privacy",
+    "source": "help-center/privacy",
+    "questions": [
+      "How is my data used?",
+      "Can I delete my personal data?",
+      "Is workspace content sold to advertisers?",
+      "Can I export my data?"
+    ],
+    "content": "Customer data is used to provide and improve the service. Private workspace content is not sold to advertisers. Users can request export or deletion of personal data through privacy support. Deleted accounts are removed from active systems after verification, while backups may retain encrypted data for a limited retention period. Administrators can remove members from a workspace at any time."
+  },
+  {
+    "title": "Workspace Roles",
+    "source": "help-center/roles",
+    "questions": [
+      "What are workspace roles?",
+      "What can owners do?",
+      "What can administrators do?",
+      "What can members and viewers do?"
+    ],
+    "content": "Workspace roles control permissions. Owners can manage billing, delete the workspace, invite members, and assign administrator access. Administrators can manage members and workspace settings but cannot delete the workspace unless ownership is transferred. Members can create and edit their own content according to workspace policies. Viewers can read shared content but cannot make changes."
+  },
+  {
+    "title": "Cancellation",
+    "source": "help-center/cancellation",
+    "questions": [
+      "How can I cancel my subscription?",
+      "What happens after cancellation?",
+      "Do I keep paid features after canceling?",
+      "Does cancellation delete my account?"
+    ],
+    "content": "Subscriptions can be canceled from Settings under Billing. Cancellation stops future renewals but does not remove access already paid for. Users keep paid features until the end of the current billing cycle. After the cycle ends, the account moves to the Free plan and usage limits are reduced. Account data remains available unless the user separately requests account deletion."
+  }
+]
