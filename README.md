@@ -27,7 +27,7 @@ Grounded Response
 
 1. Documents are loaded from `data/docs.json`.
 2. Documents are chunked with overlap and metadata.
-3. `sentence-transformers/all-MiniLM-L6-v2` creates local embeddings from each chunk plus its title, source metadata, and FAQ-style question anchors.
+3. `sentence-transformers/paraphrase-MiniLM-L3-v2` creates local embeddings from each chunk plus its title, source metadata, and FAQ-style question anchors.
 4. Embeddings are normalized and stored in FAISS using inner product search, which is equivalent to cosine similarity for normalized vectors.
 5. `/api/chat` embeds the user question and retrieves the top 3 chunks.
 6. If the best similarity score is below `0.65`, the API returns:
@@ -163,7 +163,7 @@ The default model is `google/gemini-2.0-flash-exp:free`. You can replace it with
 
 ## Embedding Strategy
 
-The app uses `all-MiniLM-L6-v2`, a fast local embedding model from Sentence Transformers. It avoids paid embedding APIs and works well for small to medium knowledge bases. Each document chunk is indexed along with FAQ-style question anchor vectors that point back to the same source content. This improves short natural-language queries like "How do I get a refund?" while answers remain grounded in the original content. Embeddings are normalized before being inserted into FAISS.
+The app uses `paraphrase-MiniLM-L3-v2`, a fast local embedding model from Sentence Transformers. It avoids paid embedding APIs and works well for small to medium knowledge bases. Each document chunk is indexed along with FAQ-style question anchor vectors that point back to the same source content. This improves short natural-language queries like "How do I get a refund?" while answers remain grounded in the original content. Embeddings are normalized before being inserted into FAISS.
 
 ## Similarity Search
 
