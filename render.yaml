@@ -15,7 +15,7 @@ services:
       - key: OPENROUTER_APP_NAME
         value: RAG Chat Assistant
       - key: EMBEDDING_MODEL
-        value: all-MiniLM-L6-v2
+        value: paraphrase-MiniLM-L3-v2
       - key: SIMILARITY_THRESHOLD
         value: "0.65"
       - key: TOP_K
