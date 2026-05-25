@@ -20,7 +20,7 @@ class Settings(BaseSettings):
         default="https://openrouter.ai/api/v1/chat/completions",
         alias="OPENROUTER_API_URL",
     )
-    embedding_model: str = Field(default="all-MiniLM-L6-v2", alias="EMBEDDING_MODEL")
+    embedding_model: str = Field(default="paraphrase-MiniLM-L3-v2", alias="EMBEDDING_MODEL")
     similarity_threshold: float = Field(default=0.65, alias="SIMILARITY_THRESHOLD")
     top_k: int = Field(default=3, alias="TOP_K")
     allowed_origins: str = Field(
